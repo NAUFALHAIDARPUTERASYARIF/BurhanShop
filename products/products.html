@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../navbar.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Burhan Shop Products</title>
+    <style>
+        /* Sembunyikan hasil yang tidak cocok (pakai !important biar ngalahin display:flex) */
+        .box.hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="../index.html">
+            <h2>BURHAN SHOP</h2>
+        </a>
+        <input type="text" id="search-bar" placeholder="Cari produk..." />
+    </nav>
+
+    <main>
+        <section class="results">
+            <h2>Products</h2>
+            <div class="isi">
+                <div class="box">
+                    <img src="../Dummy.jpg" alt="Produk" />
+                    <div class="isi">
+                        <h4 class="nama-produk">Plastik Klip</h4>
+                        <p>Rp31.600</p>
+                        <a href="">Order from Whatsapp now</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="../Dummy.jpg" alt="Produk" />
+                    <div class="isi">
+                        <h4 class="nama-produk">Plastik Kresek Hitam</h4>
+                        <p>Rp25.000</p>
+                        <a href="">Order from Whatsapp now</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="../Dummy.jpg" alt="Produk" />
+                    <div class="isi">
+                        <h4 class="nama-produk">Plastik Sampah Besar</h4>
+                        <p>Rp40.000</p>
+                        <a href="">Order from Whatsapp now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="contacts">
+                <p>Whatsapp: +62 821-xxxx-xxxx</p>
+                <p>Instagram: @dummyinsta</p>
+            </div>
+            <div class="location">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="loc-icon" viewBox="0,0,256,256">
+                    <g fill="#c49e85" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <g transform="scale(5.12,5.12)">
+                            <path
+                                d="M25,1c-8.82031,0 -16,7.17969 -16,16c0,14.11328 14.62891,30.94531 15.25,31.65625c0.19141,0.21875 0.46094,0.34375 0.75,0.34375c0.30859,-0.01953 0.55859,-0.125 0.75,-0.34375c0.62109,-0.72266 15.25,-17.84375 15.25,-31.65625c0,-8.82031 -7.17969,-16 -16,-16zM25,12c3.3125,0 6,2.6875 6,6c0,3.3125 -2.6875,6 -6,6c-3.3125,0 -6,-2.6875 -6,-6c0,-3.3125 2.6875,-6 6,-6z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+                <p>MT Haryono Dalam (BJBJ) No 45D, Gn. Bahagia, Kecamatan Balikpapan Selatan, Kota Balikpapan,
+                    Kalimantan Timur 76114</p>
+            </div>
+        </footer>
+        <div class="copy">
+            <p>&copy Burhan 2025. Hak Cipta Dilindungi</p>
+        </div>
+    </main>
+
+    <script>
+        const searchInput = document.getElementById('search-bar');
+        const productBoxes = document.querySelectorAll('.results .box');
+
+        function filterProducts() {
+            const keyword = searchInput.value.toLowerCase().trim();
+
+            productBoxes.forEach((box) => {
+                const nameEl = box.querySelector('.nama-produk');
+                const nameText = nameEl ? nameEl.textContent.toLowerCase() : '';
+
+                if (keyword === '' || nameText.includes(keyword)) {
+                    box.classList.remove('hidden');
+                } else {
+                    box.classList.add('hidden');
+                }
+            });
+        }
+
+        // Live filter saat ngetik
+        searchInput.addEventListener('input', filterProducts);
+    </script>
+</body>
+
+</html>

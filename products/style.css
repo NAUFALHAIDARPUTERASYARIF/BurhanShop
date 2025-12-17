@@ -1,0 +1,75 @@
+body {
+    background-color: #191308;
+}
+
+main {
+    padding-block-start: 10vh;
+    background-color: #191308;
+}
+
+main .results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh;
+}
+
+main .results h2 {
+    font-size: clamp(1vh, 6vh, 6vh);
+    margin-block-end: 5vh;
+}
+
+main .results .isi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    inline-size: 98%;
+}
+
+main .results .isi .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    inline-size: 20%;
+    block-size: 94%;
+    border-radius: 5%;
+    padding: 4vh;
+    background-color: #322a26;
+    border: 1px solid #c49e85;
+}
+
+main .results .isi .box img {
+    block-size: 40vh;
+    inline-size: 40vh;
+    object-fit: cover;
+    object-position: center;
+    margin-block-end: 2vh;
+}
+
+main .results .isi .box .isi {
+    display: flex;
+    flex-direction: column;
+}
+
+main .results .isi .box .isi h4 {
+    font-size: clamp(1vh, 4vh, 4vh);
+}
+
+main .results .isi .box .isi p {
+    font-size: clamp(1vh, 4vh, 4vh);
+    padding-block-end: 5vh;
+}
+
+main .results .isi .box .isi a {
+    font-size: clamp(1vh, 4vh, 4vh);
+    padding: 2vh;
+    background-color: #191308;
+    border-radius: 5vh;
+    text-decoration: none;
+}
+
+main .results .isi .box .isi a:hover {
+    cursor: pointer;
+    color: #322a26;
+}

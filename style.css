@@ -1,0 +1,82 @@
+main {
+    background-color: #191308;
+}
+
+main .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block-start: 10vh;
+    block-size: 90vh;
+    background-image: linear-gradient(#191308, #322a26);
+}
+
+main .hero h2 {
+    font-size: clamp(1vh, 10vh, 10vh);
+}
+
+main .hero h4 {
+    font-size: clamp(1vh, 6vh, 6vh);
+}
+
+main .unggulan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    block-size: 100vh;
+    background-image: linear-gradient(#322a26, #191308);
+    padding: 2vh;
+}
+
+main .unggulan h2 {
+    font-size: clamp(1vh, 6vh, 6vh);
+    padding-block-end: 10vh;
+}
+
+main .unggulan .isiUnggulan {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    inline-size: 98%;
+}
+
+main .unggulan .isiUnggulan .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: clamp(1vh, 4vh, 4vh);
+    inline-size: 20%;
+    block-size: 94%;
+    background-color: #191308;
+    padding: 4vh;
+    border: 1px solid #c49e85;
+    border-radius: 5%;
+}
+
+main .unggulan .isiUnggulan .box img {
+    block-size: 40vh;
+    inline-size: 40vh;
+    object-fit: cover;
+    object-position: center;
+    margin-block-end: 2vh;
+}
+
+main .unggulan .isiUnggulan .box .isi p {
+    padding-block-end: 4vh;
+}
+
+main .unggulan .isiUnggulan .box .isi a {
+    padding: 3vh;
+    font-size: clamp(1vh, 3vh, 3vh);
+    background-color: #322a26;
+    border-radius: 2vh;
+    text-decoration: none;
+}
+
+main .unggulan .isiUnggulan .box .isi a:hover {
+    cursor: pointer;
+    background-color: #191308;
+    color: #322a26;
+}

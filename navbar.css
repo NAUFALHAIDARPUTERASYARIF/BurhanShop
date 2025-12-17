@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #c49e85;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    block-size: 10vh;
+    inline-size: 100%;
+    background-color: #322a26;
+    border-block-end: 4px solid black;
+}
+
+nav .search-icon {
+    inline-size: 5vh;
+    margin-inline-end: 2vh;
+    padding: 1vh;
+    border-radius: 10%;
+}
+
+nav .search-icon:hover {
+    cursor: pointer;
+    background-color: #191308;
+}
+
+nav a {
+    margin-inline-start: 2vh;
+    text-decoration: none;
+}
+
+nav input {
+    block-size: 5vh;
+    inline-size: 50vh;
+    margin-inline-end: 2vh;
+    font-size: clamp(1vh, 4vh, 4vh);
+}
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    block-size: 40vh;
+    background-color: #191308;
+}
+
+footer .contacts {
+    font-size: clamp(1vh, 4vh, 4vh);
+    inline-size: 45%;
+}
+
+footer .location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: clamp(1vh, 3vh, 3vh);
+    inline-size: 45%;
+}
+
+footer .location .loc-icon {
+    inline-size: clamp(1vh, 10vh, 10vh);
+    padding-inline-end: 2vh;
+}
+
+main .copy {
+    margin-block-start: 5vh;
+    block-size: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #322a26;
+    font-size: clamp(1vh, 3vh, 3vh);
+}
