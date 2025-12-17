@@ -13,11 +13,11 @@ main .hero {
 }
 
 main .hero h2 {
-    font-size: clamp(1vh, 10vh, 10vh);
+    font-size: clamp(0.1vh, 10vh, 10vh);
 }
 
 main .hero h4 {
-    font-size: clamp(1vh, 6vh, 6vh);
+    font-size: clamp(0.1vh, 6vh, 6vh);
 }
 
 main .unggulan {
@@ -56,8 +56,8 @@ main .unggulan .isiUnggulan .box {
 }
 
 main .unggulan .isiUnggulan .box img {
-    block-size: 40vh;
-    inline-size: 40vh;
+    block-size: clamp(1vh, 40vh, 40vh);
+    inline-size: clamp(1vh, 40vh, 40vh);
     object-fit: cover;
     object-position: center;
     margin-block-end: 2vh;
@@ -79,4 +79,23 @@ main .unggulan .isiUnggulan .box .isi a:hover {
     cursor: pointer;
     background-color: #191308;
     color: #322a26;
+}
+
+@media (max-width: 768px) {
+    main .unggulan .isiUnggulan .box img {
+        block-size: clamp(1vh, 30vh, 30vh);
+        inline-size: clamp(1vh, 30vh, 30vh);
+    }
+
+    main .unggulan .isiUnggulan .box .isi h4 {
+        font-size: clamp(1vh, 3vh, 3vh);
+    }
+
+    main .unggulan .isiUnggulan .box .isi p {
+        font-size: clamp(1vh, 3vh, 3vh);
+    }
+
+    main .unggulan .isiUnggulan .box .isi a {
+        font-size: clamp(1vh, 2vh, 2vh);
+    }
 }

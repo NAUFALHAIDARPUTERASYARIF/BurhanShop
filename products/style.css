@@ -73,3 +73,35 @@ main .results .isi .box .isi a:hover {
     cursor: pointer;
     color: #322a26;
 }
+
+
+@media (max-width: 768px) {
+    main .results .isi .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        inline-size: 25%;
+        block-size: auto;
+        border-radius: 5%;
+        padding: 4vh;
+        background-color: #322a26;
+        border: 1px solid #c49e85;
+    }
+
+    main .results .isi .box img {
+        block-size: clamp(1vh, 30vh, 30vh);
+        inline-size: clamp(1vh, 30vh, 30vh);
+    }
+
+    main .results .isi .box .isi h4 {
+        font-size: clamp(1vh, 3vh, 3vh);
+    }
+
+    main .results .isi .box .isi p {
+        font-size: clamp(1vh, 3vh, 3vh);
+    }
+
+    main .results .isi .box .isi a {
+        font-size: clamp(1vh, 2vh, 2vh);
+    }
+}
