@@ -81,7 +81,7 @@ main .unggulan .isiUnggulan .box .isi a:hover {
     color: #322a26;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 980px) {
     main .unggulan .isiUnggulan .box img {
         block-size: clamp(1vh, 30vh, 30vh);
         inline-size: clamp(1vh, 30vh, 30vh);
@@ -98,4 +98,5 @@ main .unggulan .isiUnggulan .box .isi a:hover {
     main .unggulan .isiUnggulan .box .isi a {
         font-size: clamp(1vh, 2vh, 2vh);
     }
+
 }
