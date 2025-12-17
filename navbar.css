@@ -10,16 +10,16 @@ nav {
     position: fixed;
     justify-content: space-between;
     align-items: center;
-    block-size: 10vh;
+    block-size: clamp(1vw, 6vw, 6vw);
     inline-size: 100%;
     background-color: #322a26;
     border-block-end: 4px solid black;
 }
 
 nav .search-icon {
-    inline-size: 5vh;
-    margin-inline-end: 2vh;
-    padding: 1vh;
+    inline-size: 3vw;
+    margin-inline-end: 2vw;
+    padding: 0.5vw;
     border-radius: 10%;
 }
 
@@ -29,15 +29,16 @@ nav .search-icon:hover {
 }
 
 nav a {
-    margin-inline-start: 2vh;
+    margin-inline-start: 2vw;
+    font-size: clamp(0.1vw, 1.2vw, 1.2vw);
     text-decoration: none;
 }
 
 nav input {
-    block-size: 5vh;
-    inline-size: 50vh;
-    margin-inline-end: 2vh;
-    font-size: clamp(1vh, 4vh, 4vh);
+    block-size: 3vw;
+    inline-size: 20vw;
+    margin-inline-end: 2vw;
+    font-size: clamp(0.1vw, 1.2vw, 1.2vw);
 }
 
 
@@ -46,12 +47,12 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    block-size: 40vh;
+    block-size: 40vw;
     background-color: #191308;
 }
 
 footer .contacts {
-    font-size: clamp(1vh, 4vh, 4vh);
+    font-size: clamp(1vw, 2vw, 2vw);
     inline-size: 45%;
 }
 
@@ -59,21 +60,75 @@ footer .location {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: clamp(1vh, 3vh, 3vh);
+    font-size: clamp(1vw, 1.6vw, 1.6vw);
     inline-size: 45%;
 }
 
 footer .location .loc-icon {
-    inline-size: clamp(1vh, 10vh, 10vh);
-    padding-inline-end: 2vh;
+    inline-size: clamp(1vw, 12vw, 12vw);
+    padding-inline-end: 2vw;
 }
 
 main .copy {
-    margin-block-start: 5vh;
-    block-size: 10vh;
+    margin-block-start: 1vw;
+    block-size: 6vw;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #322a26;
-    font-size: clamp(1vh, 3vh, 3vh);
+    font-size: clamp(1vw, 2vw, 2vw);
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        justify-content: space-between;
+        align-items: center;
+        block-size: clamp(1vw, 12vw, 12vw);
+        inline-size: 100%;
+        background-color: #322a26;
+        border-block-end: 4px solid black;
+    }
+
+    nav .search-icon {
+        inline-size: 4vw;
+        margin-inline-end: 2vw;
+        padding: 1vw;
+        border-radius: 10%;
+    }
+
+    nav .search-icon:hover {
+        cursor: pointer;
+        background-color: #191308;
+    }
+
+    nav a {
+        margin-inline-start: 2vw;
+        font-size: clamp(0.1vw, 1.8vw, 1.8vw);
+        text-decoration: none;
+    }
+
+    nav input {
+        block-size: 3vw;
+        inline-size: 40vw;
+        margin-inline-end: 2vw;
+        font-size: clamp(1vw, 2vw, 2vw);
+    }
+
+    footer .contacts {
+        font-size: clamp(1vw, 2.4vw, 2.4vw);
+        inline-size: 45%;
+    }
+
+    footer .location {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: clamp(1vw, 2vw, 2vw);
+        inline-size: 45%;
+    }
+
 }
