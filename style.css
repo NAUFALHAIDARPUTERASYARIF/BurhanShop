@@ -13,11 +13,11 @@ main .hero {
 }
 
 main .hero h2 {
-    font-size: clamp(0.1vh, 10vh, 10vh);
+    font-size: clamp(0.1rem, 10vh, 10vh);
 }
 
 main .hero h4 {
-    font-size: clamp(0.1vh, 6vh, 6vh);
+    font-size: clamp(0.1rem, 6vh, 6vh);
 }
 
 main .unggulan {
@@ -100,4 +100,5 @@ main .unggulan .isiUnggulan .box .isi a:hover {
     }
 
 }
+
 
