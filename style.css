@@ -83,20 +83,21 @@ main .unggulan .isiUnggulan .box .isi a:hover {
 
 @media (max-width: 980px) {
     main .unggulan .isiUnggulan .box img {
-        block-size: clamp(1vh, 30vh, 30vh);
-        inline-size: clamp(1vh, 30vh, 30vh);
+        block-size: clamp(0.1vh, 30vh, 30vh);
+        inline-size: clamp(0.1vh, 30vh, 30vh);
     }
 
     main .unggulan .isiUnggulan .box .isi h4 {
-        font-size: clamp(1vh, 3vh, 3vh);
+        font-size: clamp(0.1vh, 3vh, 3vh);
     }
 
     main .unggulan .isiUnggulan .box .isi p {
-        font-size: clamp(1vh, 3vh, 3vh);
+        font-size: clamp(0.1vh, 3vh, 3vh);
     }
 
     main .unggulan .isiUnggulan .box .isi a {
-        font-size: clamp(1vh, 2vh, 2vh);
+        font-size: clamp(0.1vh, 2vh, 2vh);
     }
 
 }
+
