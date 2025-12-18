@@ -12,8 +12,8 @@ nav {
     align-items: center;
     block-size: clamp(1vw, 6vw, 6vw);
     inline-size: 100%;
-    background-color: #322a26;
-    border-block-end: 4px solid black;
+    background-color: #0d00a4;
+    border-block-end: 2px solid black;
 }
 
 nav .search-icon {
@@ -25,13 +25,17 @@ nav .search-icon {
 
 nav .search-icon:hover {
     cursor: pointer;
-    background-color: #191308;
+    background-color: #22007c;
 }
 
 nav a {
     margin-inline-start: 2vw;
     font-size: clamp(0.1vw, 1.2vw, 1.2vw);
     text-decoration: none;
+}
+
+nav a img {
+    inline-size: clamp(0.5vw, 6vw, 6vw);
 }
 
 nav input {
@@ -48,7 +52,7 @@ footer {
     align-items: center;
     justify-content: center;
     block-size: 40vw;
-    background-color: #191308;
+    background-color: #140152;
 }
 
 footer .contacts {
@@ -65,17 +69,16 @@ footer .location {
 }
 
 footer .location .loc-icon {
-    inline-size: clamp(1vw, 12vw, 12vw);
+    inline-size: clamp(1vw, 6vw, 6vw);
     padding-inline-end: 2vw;
 }
 
 main .copy {
-    margin-block-start: 1vw;
     block-size: 6vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #322a26;
+    background-color: #0d00a4;
     font-size: clamp(1vw, 2vw, 2vw);
 }
 
@@ -89,7 +92,7 @@ main .copy {
         align-items: center;
         block-size: clamp(1vw, 12vw, 12vw);
         inline-size: 100%;
-        background-color: #322a26;
+        background-color: #0d00a4;
         border-block-end: 4px solid black;
     }
 
@@ -102,7 +105,7 @@ main .copy {
 
     nav .search-icon:hover {
         cursor: pointer;
-        background-color: #191308;
+        background-color: #22007c;
     }
 
     nav a {

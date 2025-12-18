@@ -1,5 +1,5 @@
 main {
-    background-color: #191308;
+    background-color: #140152;
 }
 
 main .hero {
@@ -8,7 +8,7 @@ main .hero {
     justify-content: center;
     align-items: center;
     block-size: 47vw;
-    background-image: linear-gradient(#191308, #322a26);
+    background-image: linear-gradient(#140152, #04052e);
 }
 
 main .hero h2 {
@@ -24,7 +24,7 @@ main .unggulan {
     flex-direction: column;
     align-items: center;
     block-size: auto;
-    background-image: linear-gradient(#322a26, #191308);
+    background-image: linear-gradient(#04052e, #140152);
     padding: 2vw;
 }
 
@@ -48,7 +48,7 @@ main .unggulan .isiUnggulan .box {
     font-size: clamp(1vw, 2vw, 2vw);
     inline-size: auto;
     block-size: auto;
-    background-color: #191308;
+    background-color: #22007c;
     padding: 2vw;
     border: 1px solid #c49e85;
     border-radius: 5%;
@@ -69,15 +69,15 @@ main .unggulan .isiUnggulan .box .isi p {
 main .unggulan .isiUnggulan .box .isi a {
     padding: 1vw;
     font-size: clamp(1vw, 1.4vw, 1.4vw);
-    background-color: #322a26;
+    background-color: #0d00a4;
     border-radius: 1vw;
     text-decoration: none;
 }
 
 main .unggulan .isiUnggulan .box .isi a:hover {
     cursor: pointer;
-    background-color: #191308;
-    color: #322a26;
+    background-color: #140152;
+    color: #04052e;
 }
 
 @media (max-width: 768px) {
@@ -87,7 +87,7 @@ main .unggulan .isiUnggulan .box .isi a:hover {
         justify-content: center;
         align-items: center;
         block-size: 60vw;
-        background-image: linear-gradient(#191308, #322a26);
+        background-image: linear-gradient(#140152, #04052e);
     }
 
     main .unggulan .isiUnggulan {
@@ -106,7 +106,7 @@ main .unggulan .isiUnggulan .box .isi a:hover {
         font-size: clamp(1vw, 4vw, 4vw);
         inline-size: auto;
         block-size: 94%;
-        background-color: #191308;
+        background-color: #140152;
         padding: 4vw;
         border: 1px solid #c49e85;
         border-radius: 5%;
@@ -127,14 +127,14 @@ main .unggulan .isiUnggulan .box .isi a:hover {
     main .unggulan .isiUnggulan .box .isi a {
         padding: 1.2vw;
         font-size: clamp(1vw, 1.6vw, 1.6vw);
-        background-color: #322a26;
+        background-color: #04052e;
         border-radius: 1vw;
         text-decoration: none;
     }
 
     main .unggulan .isiUnggulan .box .isi a:hover {
         cursor: pointer;
-        background-color: #191308;
-        color: #322a26;
+        background-color: #140152;
+        color: #04052e;
     }
 }
